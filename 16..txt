@@ -1,0 +1,31 @@
+16. Write a program that computes the net amount of a bank account based a 
+transaction log from console input. The transaction log format is shown as 
+following:
+D 100
+W 200
+D means deposit while W means withdrawal.
+Suppose the following input is supplied to the program:
+D 300
+D 300
+W 200
+D 100
+Then, the output should be:
+500
+
+CODE:
+netbal = 0
+while True:
+    en= input()
+    if not en:
+        break
+    values = en.split(" ")
+    operation = values[0]
+    amount = int(values[1])
+    if operation=="D":
+        netbal+=amount
+    elif operation=="W":
+        netbal-=amount
+    else:
+        pass
+print(netbal)
+

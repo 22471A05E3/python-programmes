@@ -1,0 +1,7 @@
+27. Define a function that can receive two integer numbers in string form and 
+compute their sum and then print it in console.
+
+CODE:
+a, b = map(int, input('enter two numbers\n').split())
+c = a + b
+print('{0} + {1} = {2}'.format(a, b, c))

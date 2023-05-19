@@ -1,0 +1,7 @@
+88. Please write a program to shuffle and print the list [3,6,7,8].
+
+CODE:
+from random import shuffle
+nums = [3,6,7,8]
+shuffle(nums)
+print(nums)

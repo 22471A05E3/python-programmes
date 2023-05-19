@@ -1,0 +1,16 @@
+25. Define a class, which have a class parameter and have a same instance 
+parameter.
+
+CODE:
+class Robot:
+    Three_Laws = (
+"""A robot may not injure a human being.""",
+"""A robot must obey the orders given to it by human beings,except if it conflicts with the first one""",
+"""A robot must protect its own existence ."""
+)
+    def __init__(self, name, build_year):
+        self.name = name
+        self.build_year = build_year
+from robot_asimov import Robot
+for number, text in enumerate(Robot.Three_Laws):
+    print(str(number+1) + ":\n" + text) 
